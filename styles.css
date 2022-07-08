@@ -1,0 +1,269 @@
+/* Universal styles  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+:root {
+    font-size: 16px;
+    --main-color: #ECF2F8;
+    --second-color: #FFF ;
+    --third-color: #48556A;
+    --font-color: #6E8098;
+    --heading-color: #48556A;
+    --font-family: 'Manrope', sans-serif;
+ 
+}
+/* main content  */
+body {
+    background: var(--main-color);
+    font-family: var(--font-family);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: url(./images/drawers.jpg) no-repeat;
+    background-size: cover;
+    border-radius: .5rem .5rem 0 0;
+    min-height: 12.5rem;
+}
+
+header,
+main,
+.footer{
+    min-width: 20.4375rem;
+    width: 60%;
+    max-height: 80%;
+}
+
+main {
+    min-height: 15rem;
+    background: var(--second-color);
+    border-radius: 0 0 0.5rem .5rem;  
+}
+
+section {
+    padding: 0 2rem;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 4rem;
+    width: 100%;
+    background-color: var(--second-color);
+    border-radius: 0 0 0.5rem .5rem;
+}
+
+.author-info{
+    height: 2.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+
+.share-img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #ECF2F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.before {
+    margin-left: 3.375rem;
+}
+
+.after {
+    margin-left: 1.75rem;
+    margin-right: 2.5rem;
+    background: #a8b3c1;
+}
+
+.before i {
+    color: #6e8098;
+}
+
+i {
+    color: #fff;
+    height: 0.810625rem;
+    width: 0.9375rem;
+}
+
+.facebook {
+    margin-left: 1.3125rem;
+}
+
+/* hoverstates */
+
+.hover-state {
+    background: #9199a6;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 .5rem .5rem ;
+}
+
+.hover-state p {
+    color: #c4ceda;
+    line-height: 1.25rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+.hover-state img {
+    margin-right: 1rem;
+    height: 1.25rem;
+}
+
+/* Typography  */
+h1 {
+    color: var(--heading-color);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+    padding-top:2.25rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    color: var(--font-color);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.12px;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 0.8125rem; 
+    color: #48556A;
+    width: 7.25rem; 
+}
+
+time {
+    color: var(--font-color);
+    font-size: 0.8125rem;
+}
+
+img {
+   max-width: 100%;
+}
+
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+/* JavaScript classes to mutate */
+
+.hidden{
+    display: none;
+}
+
+/* Media queries */
+
+@media (min-width: 900px){
+   body {
+    flex-direction: row;
+   }
+
+   header {
+    height: 17.5rem;
+    width: 17.8125rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+   }
+
+   main {
+    height: 17.5rem;
+    width: 27.8125rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+   }
+ 
+   .footer {
+    position: relative;
+    width: 22.8125rem;
+    margin-left: 2.5rem;
+}
+
+    .author-info{
+        height: 2.5rem;
+        width: 22.8125rem;
+        position: absolute;
+        right: 0.625rem;
+        margin-bottom: 0;
+}
+
+    .hover-state {
+        position: absolute;
+        background: #48556A;
+        width: 15.5rem;
+        height: 4.1875rem;
+        left: 13.5rem;
+        top: -5rem;
+        border-radius: 0.625rem;
+}
+
+    .avatar {
+        margin-left: 0;
+}
+
+    .share-img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0px;
+        border-radius: 50%;
+        background-color: #ECF2F8;
+}
+
+   .before {
+    margin-left: 10rem;
+    padding: 0;
+}
+
+    .after {
+        position: absolute;
+        top: 5.9375rem;
+        right: calc(50% - 1rem);
+        background-color: #6e8098;
+}
+
+
+    #triangle-down {
+        position: absolute;
+        top: 4.1875rem;
+        right: calc(50% - 0.75rem);
+        width: 0;
+        height: 0;
+        border-left: 0.75rem solid transparent;
+        border-right: 0.75rem solid transparent;
+        border-top: 0.75rem solid #48556A;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.25px;
+}
+
+    p {
+        margin-bottom: 0.5rem;
+   }
+}
