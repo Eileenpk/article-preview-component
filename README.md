@@ -22,7 +22,7 @@ Users should be able to:
 ### Screenshot
 
 ![screen shot of full screen webpage](https://github.com/Eileenpk/article-preview-component/blob/main/images/Screenshot-full-website.png)
-![screen shot of mobile webpage](https://github.com/Eileenpk/article-preview-component/blob/main/images/Screenshot-mobile.png)
+![screen shot of mobile webpage](https://github.com/Eileenpk/article-preview-component/blob/main/images/Screenshot-mobile-1.png)
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Eileenpk/article-preview-component)
